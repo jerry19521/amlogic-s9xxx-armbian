@@ -22,7 +22,7 @@ on:
       armbian_board:
         description: "Select device board."
         required: false
-        default: "all"
+        default: "aio-3399j"
         type: choice
         options:
           - all
@@ -36,7 +36,7 @@ on:
           - a311d-oes
           - alark35-3500
           - anas3035
-          - aio-3399b
+          - aio-3399j
           - bdy-g18-pro
           - beikeyun
           - chainedbox
@@ -198,7 +198,7 @@ on:
       armbian_kernel:
         description: "Select kernel version."
         required: false
-        default: "6.1.y_6.12.y"
+        default: "6.1.y"
         type: choice
         options:
           - 5.10.y
@@ -219,10 +219,10 @@ on:
       kernel_repo:
         description: "Set the kernel repository."
         required: false
-        default: "ophub/kernel"
+        default: "jerry19521/kernel"
         type: choice
         options:
-          - ophub/kernel
+          - jerry19521/kernel
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
